@@ -8,14 +8,33 @@
         div {
             width: 400px;
             height: 200px;
+            background-color: rgba(222, 0, 0, 0.666);
+            border-radius: 5px;
+            box-shadow: 0 0 2px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px 10px 10px 10px;
+            padding: 10px
+        }
+        .ok-button {
+            border-radius: 5px;
+            width: 50px;
+            height: 30px;
+            background: white;
         }
     </style>
 </head>
 <body>
 
     <div>
-        alo alo alo
+        Seja ban vindo a este site
+        <button class="ok-button" id="alertButton">ok</button>
     </div>
+
+    <script>
+        document.getElementById("alertButton").addEventListener("click", function() {
+            alert("Você clicou no botão ok!");
+        });
+    </script>
 
 </body>
 </html>
